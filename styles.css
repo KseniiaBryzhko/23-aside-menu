@@ -1,0 +1,136 @@
+/* підключення шрифтів */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 53px;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 34px;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 1.625rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+blockquote {
+  font-size: 1.625rem;
+  color: #8b8b8b;
+  min-width: 465px;
+  margin: 40px auto;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+a {
+  color: #f40082;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-column-gap: 20px;
+}
+
+aside {
+  grid-column: 2 / span 2;
+}
+
+aside > div {
+  position: sticky;
+  top: 0;
+  padding-top: 150px;
+}
+
+.table-of-contents {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 3px;
+  padding-left: 24px;
+  margin-bottom: 30px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  margin-bottom: 30px;
+  padding: 0 0 0 24px;
+  font-size: 1rem;
+}
+
+aside ul li.selected {
+  border-left: 2px solid #f40082;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+aside ul li.selected a {
+  font-weight: bold;
+  color: #f40082;
+}
+
+main {
+  padding-top: 50px;
+  grid-column: 5 / span 5;
+  margin-left: 100px;
+}
+
+.image-text-wrapper {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 70px;
+  margin-left: -70px;
+  padding-top: 50px;
+}
+
+.image {
+  margin-bottom: 50px;
+  margin-left: -70px;
+  padding-top: 50px;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+figcaption {
+  color: #8b8b8b;
+  font-size: 0.875rem;
+  text-align: center;
+}
