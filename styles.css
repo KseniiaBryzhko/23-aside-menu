@@ -91,6 +91,7 @@ aside ul li {
 }
 
 aside ul li.selected {
+  color: #f40082;
   border-left: 2px solid #f40082;
 }
 
